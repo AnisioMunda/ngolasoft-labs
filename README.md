@@ -27,6 +27,10 @@ Cada sistema segue a convenção de nome `ngola-<domínio>` (ex: `ngola-health`,
 - Cada sistema tem a sua própria base de dados — sem partilha direta entre projetos
 - Comunicação entre sistemas, quando necessária, é feita via API pública
 
+<p align="center">
+  <img src="arquitetura.png" alt="Arquitetura NgolaSoft Labs" width="600"/>
+</p>
+
 ## Autor
 
 Desenvolvido e mantido por Anisio Munda, como parte da minha jornada de aprendizagem em engenharia de software.
