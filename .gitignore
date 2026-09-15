@@ -1,0 +1,65 @@
+# =========================================
+# Ngola-Health — .gitignore
+# (raiz do Git: /Users/anisiomunda/Desktop/NgolaSoft Labs)
+# =========================================
+
+### Variáveis de ambiente e secrets ###
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.crt
+*.p12
+
+### Backend — Spring Boot / Maven ###
+ngola-health/backend/target/
+ngola-health/backend/.mvn/wrapper/maven-wrapper.jar
+ngola-health/backend/HELP.md
+ngola-health/backend/.mvn/
+*.jar
+*.war
+*.class
+
+### Frontend — Angular / Node ###
+ngola-health/frontend/node_modules/
+ngola-health/frontend/dist/
+ngola-health/frontend/.angular/
+ngola-health/frontend/tmp/
+ngola-health/frontend/out-tsc/
+ngola-health/frontend/coverage/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+### Docker ###
+# Ficheiros de override locais (não devem ir para o repo)
+ngola-health/docker-compose.override.yml
+# Dados persistidos localmente fora de volumes nomeados (ex: bind mounts de teste)
+ngola-health/infra/postgres/data/
+ngola-health/infra/redis/data/
+
+### IDEs ###
+.idea/
+*.iml
+.vscode/
+!.vscode/extensions.json
+.factorypath
+.classpath
+.project
+.settings/
+
+### Sistema Operativo ###
+.DS_Store
+Thumbs.db
+desktop.ini
+
+### Logs e temporários ###
+*.log
+logs/
+*.tmp
+*.bak
+
+### Testes / cobertura ###
+**/*.hprof
