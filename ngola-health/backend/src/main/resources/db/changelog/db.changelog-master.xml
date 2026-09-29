@@ -11,4 +11,7 @@
     <!-- Token Blacklist -->
     <include file="db/changelog/changes/V2__create_token_blacklist_table.sql"/>
 
+    <!-- Criação do Usuário Administrador de Teste -->
+    <include file="db/changelog/changes/V3__create_admin_and_hospital.sql"/>
+
 </databaseChangeLog>
